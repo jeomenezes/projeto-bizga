@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined);
 @font-face{
     font-family: "hyper";
     src: url(fonts/HyperSuperFast.ttf) format(truetype);
@@ -355,23 +356,43 @@ section#sec-list-form{
     text-align: center;
     padding: 15px;
     cursor: pointer;
+    vertical-align: middle;
     
 }
 .li-form:hover{
     color: var(--color1);
-    background-color: var(--color7);
-
-    
+    background-color: var(--color7);   
 }
+.li-form:focus{
+    color: var(--color1);
+    background-color: var(--color7);   
+}
+/*====li span=====*/
+.li-form span{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*=====*/
+
 /*====icones dos itens de lista do form==*/
 span#ico-li01::after{
-    content: "\21c8";
+    font-family: 'Material Symbols Outlined';
+    content: "\e905";
+    font-size: 1.2em;
+    font-weight: 600;
 }
 span#ico-li02::after{
-    content: "\21c8";
+    font-family: 'Material Symbols Outlined';
+    content: "\e539";
+    font-size: 1.2em;
+    font-weight: 600;
 }
 span#ico-li03::after{
-    content: "\21c8";
+    font-family: 'Material Symbols Outlined';
+    content: "\e834";
+    font-size: 1.2em;
+    font-weight: 600;
 }
 /*====*/
 
@@ -396,7 +417,7 @@ ul#sub-form-gerir{
     opacity: 0;
     visibility: hidden;
 }
-li#gerir-reservas:hover ul{
+li#gerir-reservas:focus ul{
     opacity: 1;
     visibility: visible;
 }
@@ -405,7 +426,7 @@ ul#sub-form-check{
     visibility: hidden;
 }
 
-li#check:hover ul{
+li#check:focus ul{
     opacity: 1;
     visibility: visible;
 }
@@ -507,6 +528,20 @@ section#sld-card{
     position: absolute;
     height: 190px;
     width: 100%;
+    overflow: hidden;
+    transition: all .7s ease-in-out;
+}
+.div-img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0.7;
+    transition: all .7s ease-in-out;
+}
+div.div-img:hover img{
+    opacity: 1;
+    transform: scale(1.1,1.1);
 }
 
 .div-sec-txt{
@@ -516,44 +551,7 @@ section#sld-card{
     height: 180px;
     top: 192px;
     padding: 8px;
-
 }
-
-div#img-sec01{
-    background: var(--color2) url(img/wallpaper002.jpg) center center no-repeat;
-    background-size: cover;
-    transition: all .7s ease-in-out;
-}
-div#img-sec02{
-    background: var(--color2) url(img/wallpaper002.jpg) center center no-repeat;
-    background-size: cover;
-    transition: all .7s ease-in-out;
-}
-div#img-sec03{
-    background: var(--color2) url(img/wallpaper002.jpg) center center no-repeat;
-    background-size: cover;
-    transition: all .7s ease-in-out;
-}
-div#img-sec04{
-    background: var(--color2) url(img/wallpaper002.jpg) center center no-repeat;
-    background-size: cover;
-    transition: all .7s ease-in-out;
-}
-div#img-sec05{
-    background: var(--color2) url(img/wallpaper002.jpg) center center no-repeat;
-    background-size: cover;
-    transition: all .7s ease-in-out;
-}
-div#img-sec06{
-    background: var(--color2) url(img/wallpaper002.jpg) center center no-repeat;
-    background-size: cover;
-    transition: all .7s ease-in-out;
-}
-
-div.div-img:hover{
-    transform: rotate(5deg);
-}
-
 
 
 /*=============FOOTER==============*/
@@ -672,15 +670,14 @@ span#news-btn-ico{
     float: none;
     background-color: var(--color1);
     display: inline-block;
-    vertical-align: middle;
     border-radius: 50%;
     border: none;
     margin-right: 10px;
     cursor: pointer;
     width: 30px;
-    line-height: 27px;
+    line-height: 28px;
     color: #ffffff;
-    font-size: 1.2em;
+    
     font-weight: bolder;
     transition: .1s ease-in-out;
 
@@ -690,9 +687,11 @@ span#news-btn-ico:hover{
 
 }
 span#news-btn-ico::before{
-    content: "\27A4";
+    font-family: 'Material Symbols Outlined';
+    content: "\e163";
     font-size: 20px;
     font-weight: bolder;
+    vertical-align: middle;
 }
 
 a.link-sociais{
