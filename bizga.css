@@ -263,11 +263,11 @@ ul#submenu-bilheteria ul h1{
 
 section#bunner{
     position: relative;
-    background: black url(img/wallpaper002.jpg) center center no-repeat scroll;
+    background: black url(img/bunner-main-bizga.jpg) center center no-repeat scroll;
     background-size: cover;
     width: 100%;
     min-width: 300px;
-    height: max-content;
+    height: 500px;
     color: #ffff;
     z-index: 1;
   
