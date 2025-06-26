@@ -267,20 +267,19 @@ section#bunner{
     background-size: cover;
     width: 100%;
     min-width: 300px;
-    height: 500px;
     color: #ffff;
     z-index: 1;
+    overflow: hidden;
   
     
 }
 
 div#bunner-info{
-    width: auto;
-    height: 100%;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.585);
     text-align: center;
     margin: 0px auto;
-    padding: 20px;
+    padding: 60px;
 }
 
 div#bunner-info h1{
@@ -561,7 +560,7 @@ section.slide-bunner{
     box-sizing: border-box;
     width: 100%;
     min-width: 300px;
-    height: 500px;
+    height: 590px;
     background-color: var(--color7);
     margin-bottom: 100px;
     overflow: hidden; 
@@ -572,7 +571,7 @@ section.slide-bunner div#slider{
     left: 0;
     box-sizing: border-box;
     width: 100%;
-    height: 500px;
+    height: 100%;
     text-align: center;
 
 }
@@ -596,6 +595,7 @@ section.slide-bunner a{
 }
  img.img-slide{
     width: 100%;
+    height: 100%;
 
  }
 
@@ -612,9 +612,9 @@ div.slide-bunner-info{
 }
 
 div.slide-bunner-info h1{
-    font-size: 2.3em;
+    font-size: 3em;
     font-weight: bolder;
-    margin: 100px 0px 10px 0px;
+    margin: 150px 0px 10px 0px;
 }
 
 div.slide-bunner-info p{
@@ -647,7 +647,10 @@ div#btn-manual{
 .btn-slide:not(last-child){
     margin-left: 20px;
 }
-.btn-slide:hover, .btn-slide:focus{
+.btn-slide:hover{
+    background-color: var(--color1);
+}
+.btn-slide:focus{
     background-color: var(--color1);
     border-radius: 10px;
     padding-right: 20px;
