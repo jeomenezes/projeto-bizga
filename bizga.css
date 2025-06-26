@@ -561,14 +561,28 @@ section.slide-bunner{
     box-sizing: border-box;
     width: 100%;
     min-width: 300px;
-    height: 390px;
+    height: 500px;
     background-color: var(--color7);
     margin-bottom: 100px;
     overflow: hidden; 
 }
+section.slide-bunner div#slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+
+}
+
+div#slider input{
+    visibility: hidden;
+    
+}
 
 section.slide-bunner a{
-    display: block;
     position: absolute;
     top: 0;
     left: 0;
@@ -576,7 +590,9 @@ section.slide-bunner a{
     height: 100%;
     text-decoration: none;
     color: var(--color7);
-    animation: slide-zoom-io 3s infinite;
+    opacity: 1;
+    transition: .5s ease-in-out;
+    /*animation: slide-zoom-io 3s infinite;*/
 }
  img.img-slide{
     width: 100%;
@@ -605,7 +621,46 @@ div.slide-bunner-info p{
     font-weight: bold;
     width: 60%;
     margin: 30px auto;
+}
 
+div#btn-manual{
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 20px;
+}
+
+.btn-slide{
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 10px;
+    background-color: var(--color4);
+    transition: .2s ease-in-out;     
+}
+.btn-slide:not(last-child){
+    margin-left: 20px;
+}
+.btn-slide:hover, .btn-slide:focus{
+    background-color: var(--color1);
+    border-radius: 10px;
+    padding-right: 20px;
+}
+
+input#btn-radio-01:checked ~ a#item-slide03{
+    opacity: 1;
+}
+input#btn-radio-02:checked ~ a#item-slide03{
+    opacity: 0;
+}
+input#btn-radio-03:checked ~ a#item-slide02, input#btn-radio-03:checked ~ a#item-slide03{
+    opacity: 0;
 }
 
 @keyframes slide-zoom-io{
