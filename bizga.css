@@ -659,6 +659,9 @@ div#btn-manual{
 input#btn-radio-01:checked ~ a#item-slide03{
     opacity: 1;
 }
+input#btn-radio-01:checked  label#marcado{
+    background-color: var(--color1);
+}
 input#btn-radio-02:checked ~ a#item-slide03{
     opacity: 0;
 }
