@@ -476,8 +476,9 @@ section#sec-header{
     color: var(--color5);
 }
 section#sec-header h1{
-    font-family: "hyper", Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 3em;
+    font-size: 2em;
+    font-weight: bolder;
+    text-shadow: 1px 2px 2px rgb(39, 39, 39);
 }
 
 select#select-sec-header{
@@ -608,7 +609,7 @@ div.slide-bunner-info{
     background-color: rgba(0, 0, 0, 0.585);
     text-align: center;
     margin: 0px auto;
-    padding: 20px;
+    padding: 60px 20px;
 }
 
 div.slide-bunner-info h1{
@@ -667,29 +668,6 @@ input#btn-radio-02:checked ~ a#item-slide03{
 }
 input#btn-radio-03:checked ~ a#item-slide02, input#btn-radio-03:checked ~ a#item-slide03{
     opacity: 0;
-}
-
-@keyframes slide-zoom-io{
-    0%{
-        opacity: 0;
-
-    }
-    20%{
-        opacity: 1;
-
-    }
-    33%{
-        opacity: 1;
-
-    }
-    53%{
-        opacity: 0;
-
-    }
-    100%{
-        opacity: 0;
-
-    }
 }
 
 /*========*/
